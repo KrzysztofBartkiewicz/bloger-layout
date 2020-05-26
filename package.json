@@ -19,5 +19,8 @@
   "homepage": "https://github.com/KrzysztofBartkiewicz/bloger-layout#readme",
   "devDependencies": {
     "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
