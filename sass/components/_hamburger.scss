@@ -1,6 +1,6 @@
 .hamburger {
    width: 5rem;
-   height: 4rem;
+   height: 3.7rem;
    background-color: transparent;
    border: 1px solid #fff;
    border-radius: 5px;
@@ -11,20 +11,31 @@
    &__bar,
    &__bar::before,
    &__bar::after {
-      display: block;
       margin: 0 auto;
       content: "";
-      width: 3.5rem;
+      width: 3rem;
       height: 2px;
       background-color: #fff;
       position: absolute;
+      top: 1.6rem;
+      left: .9rem;
    }
 
    &__bar::before {
       top: -.7rem;
+      left: 0;
    }
 
    &__bar::after {
       top: .7rem;
+      left: 0;
+   }
+}
+
+#nav-toggle {
+   display: none;
+
+   &:checked > .na {
+
    }
 }

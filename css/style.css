@@ -11,17 +11,19 @@ body {
 
 .header {
   background-color: #D65814;
-  border-bottom: 2px solid #754c35; }
+  border-bottom: 2px solid #754c35;
+  max-height: 6rem; }
   .header__box {
     padding: .7rem;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
   .header__logo {
-    height: 5rem; }
+    height: 4.5rem; }
 
 .hamburger {
   width: 5rem;
-  height: 4rem;
+  height: 3.7rem;
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 5px;
@@ -29,17 +31,24 @@ body {
   position: relative;
   cursor: pointer; }
   .hamburger__bar, .hamburger__bar::before, .hamburger__bar::after {
-    display: block;
     margin: 0 auto;
     content: "";
-    width: 3.5rem;
+    width: 3rem;
     height: 2px;
     background-color: #fff;
-    position: absolute; }
+    position: absolute;
+    top: 1.6rem;
+    left: .9rem; }
   .hamburger__bar::before {
-    top: -.7rem; }
+    top: -.7rem;
+    left: 0; }
   .hamburger__bar::after {
-    top: .7rem; }
+    top: .7rem;
+    left: 0; }
+
+#nav-toggle {
+  display: none; }
 
 .navigation {
-  max-height: 0; }
+  max-height: 0;
+  opacity: 0; }

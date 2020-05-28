@@ -1,14 +1,16 @@
 .header {
    background-color: $color-primary-dark;
    border-bottom: 2px solid #754c35;
+   max-height: 6rem;
 
    &__box {
       padding: .7rem;
       display: flex;
       justify-content: space-between;
+      align-items: center;
    }
 
    &__logo {
-      height: 5rem;
+      height: 4.5rem;
    }
 }
