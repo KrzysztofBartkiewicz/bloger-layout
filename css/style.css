@@ -10,9 +10,33 @@ body {
   box-sizing: border-box; }
 
 .header {
-  background-color: #D65814; }
+  background-color: #D65814;
+  border-bottom: 2px solid #754c35; }
   .header__box {
+    padding: .7rem;
     display: flex;
     justify-content: space-between; }
   .header__logo {
     height: 5rem; }
+
+.hamburger {
+  width: 5rem;
+  height: 4rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  outline: none;
+  position: relative;
+  cursor: pointer; }
+  .hamburger__bar, .hamburger__bar::before, .hamburger__bar::after {
+    display: block;
+    margin: 0 auto;
+    content: "";
+    width: 3.5rem;
+    height: 2px;
+    background-color: #fff;
+    position: absolute; }
+  .hamburger__bar::before {
+    top: -.7rem; }
+  .hamburger__bar::after {
+    top: .7rem; }

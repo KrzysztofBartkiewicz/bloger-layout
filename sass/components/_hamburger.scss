@@ -1,0 +1,30 @@
+.hamburger {
+   width: 5rem;
+   height: 4rem;
+   background-color: transparent;
+   border: 1px solid #fff;
+   border-radius: 5px;
+   outline: none;
+   position: relative;
+   cursor: pointer;
+   
+   &__bar,
+   &__bar::before,
+   &__bar::after {
+      display: block;
+      margin: 0 auto;
+      content: "";
+      width: 3.5rem;
+      height: 2px;
+      background-color: #fff;
+      position: absolute;
+   }
+
+   &__bar::before {
+      top: -.7rem;
+   }
+
+   &__bar::after {
+      top: .7rem;
+   }
+}
