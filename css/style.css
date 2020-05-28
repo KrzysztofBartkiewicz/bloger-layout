@@ -40,3 +40,6 @@ body {
     top: -.7rem; }
   .hamburger__bar::after {
     top: .7rem; }
+
+.navigation {
+  max-height: 0; }
