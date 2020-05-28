@@ -1,16 +1,25 @@
 .navigation {
-   display: block;
-   opacity: 1;
+   display: none;
+   opacity: 0;
    
    &__list {
-     padding-left: 2rem;
-     padding-top: 2rem;
+     padding: .3rem;
    }
 
    &__item {
       color: #fff;
       font-size: 1.4rem;
-      margin-bottom: 2rem;
+      padding: .5rem 0 .5rem 2rem;
+      border-radius: 3px;
+
+      &:not(:last-child) {
+         margin-bottom: .5rem;
+      }
+
+      &:hover {
+         background-color: #fff;
+         color: $color-grey-1;
+      }
 
       &--dropdown {
 
@@ -21,6 +30,7 @@
             color: inherit;
             margin: 0;
             padding: 0;
+            height: 100%;
 
             &__icon {
                width: 1rem;
@@ -36,6 +46,25 @@
 
    &__link {
       color: inherit;
+   }
+}
+
+.dropdown {
+   &__list {
+      padding: 1rem 0 0 3rem;
+
+      display: none;
+      opacity: 0;
+   }
+
+   &__item {
+      &:not(:last-child) {
+         padding-bottom: 1rem;
+      }
+   }
+
+   &__link {
+      color: #fff;
    }
 }
 
