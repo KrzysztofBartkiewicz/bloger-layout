@@ -10,6 +10,12 @@ html {
 body {
   box-sizing: border-box; }
 
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
 body {
   font-family: 'Lato', sans-serif;
   font-size: 1.3rem;
@@ -54,8 +60,31 @@ body {
     left: 0; }
 
 .navigation {
-  display: none;
-  opacity: 0; }
+  display: block;
+  opacity: 1; }
+  .navigation__list {
+    padding-left: 2rem;
+    padding-top: 2rem; }
+  .navigation__item {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 2rem; }
+    .navigation__item--dropdown .dropdown-button {
+      background-color: transparent;
+      outline: none;
+      border: none;
+      color: inherit;
+      margin: 0;
+      padding: 0; }
+      .navigation__item--dropdown .dropdown-button__icon {
+        width: 1rem;
+        height: 1rem;
+        margin-left: 1rem;
+        display: inline-block;
+        background-size: cover;
+        background-image: url(../img/menu-arrow.svg); }
+  .navigation__link {
+    color: inherit; }
 
 .visible {
   display: block;

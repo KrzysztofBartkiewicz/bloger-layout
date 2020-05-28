@@ -1,17 +1,41 @@
 .navigation {
-   display: none;
-   opacity: 0;
+   display: block;
+   opacity: 1;
    
    &__list {
-     
+     padding-left: 2rem;
+     padding-top: 2rem;
    }
 
    &__item {
+      color: #fff;
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
 
+      &--dropdown {
+
+         .dropdown-button {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            color: inherit;
+            margin: 0;
+            padding: 0;
+
+            &__icon {
+               width: 1rem;
+               height: 1rem;
+               margin-left: 1rem;
+               display: inline-block;
+               background-size: cover;
+               background-image: url(../img/menu-arrow.svg);
+            }
+         }
+      }
    }
 
    &__link {
-      
+      color: inherit;
    }
 }
 
