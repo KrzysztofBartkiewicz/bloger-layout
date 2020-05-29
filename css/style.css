@@ -118,6 +118,20 @@ body {
   display: block;
   opacity: 1; }
 
+.ab-item {
+  margin-top: 3rem; }
+  .ab-item__heading {
+    margin: 0 0 .9rem 0; }
+  .ab-item__text {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    letter-spacing: 1px;
+    margin: 0 0 2rem 0;
+    color: #999999; }
+  .ab-item__link {
+    color: #E47133;
+    font-size: 1.5rem; }
+
 .section-banner {
   padding: 10rem 1.5rem;
   text-align: center;

@@ -1,0 +1,20 @@
+.ab-item {
+   margin-top: 3rem;
+
+   &__heading {
+      margin: 0 0 .9rem 0;
+   }
+
+   &__text {
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+      letter-spacing: 1px;
+      margin: 0 0 2rem 0;
+      color: $color-grey-3;
+   }
+
+   &__link {
+      color: $color-primary;
+      font-size: 1.5rem;
+   }
+}
