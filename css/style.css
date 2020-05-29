@@ -74,23 +74,24 @@ body {
     .navigation__item:hover {
       background-color: #fff;
       color: #545454; }
-    .navigation__item--dropdown .dropdown-button {
-      background-color: transparent;
-      outline: none;
-      border: none;
-      color: inherit;
-      margin: 0;
-      padding: 0;
-      height: 100%; }
-      .navigation__item--dropdown .dropdown-button__icon {
-        width: 1rem;
-        height: 1rem;
-        margin-left: 1rem;
-        display: inline-block;
-        background-size: cover;
-        background-image: url(../img/menu-arrow.svg); }
   .navigation__link {
     color: inherit; }
+
+.dropdown-button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  cursor: pointer; }
+  .dropdown-button__icon {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 1rem;
+    display: inline-block;
+    background-size: cover;
+    background-image: url(../img/menu-arrow.svg); }
 
 .dropdown__list {
   padding: 1rem 0 0 3rem;
