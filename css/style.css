@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,700&display=swap");
 *,
 *::after,
 *::before {
@@ -16,12 +16,22 @@ ul {
 a {
   text-decoration: none; }
 
+.main {
+  padding: 0 1.5rem; }
+
 body {
   font-family: 'Lato', sans-serif;
   font-size: 1.3rem;
   line-height: 1.4;
   font-weight: 400;
   color: #676767; }
+
+.heading-primary {
+  font-size: 2.8rem; }
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  color: #545454; }
 
 .header {
   background-color: #D65814;
@@ -113,7 +123,8 @@ body {
   text-align: center;
   background-color: #E47133;
   color: #fff; }
-  .section-banner__heading {
-    font-size: 2.8rem; }
   .section-banner__text {
     line-height: 1.9; }
+
+.section-after-banner {
+  padding-top: 6rem; }

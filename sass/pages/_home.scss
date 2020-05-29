@@ -4,11 +4,11 @@
   background-color: $color-primary;
   color: #fff;
 
-  &__heading {
-    font-size: 2.8rem;
-  }
-
   &__text {
      line-height: 1.9;
   }
+}
+
+.section-after-banner {
+   padding-top: 6rem;
 }
