@@ -41,6 +41,19 @@ body {
 .text-center {
   text-align: center; }
 
+.padding-top-big {
+  padding-top: 6rem; }
+
+.margin-top-mid {
+  margin-top: 3rem; }
+
+.margin-bottom-big {
+  margin-bottom: 6rem; }
+
+.center-horizontally {
+  display: flex;
+  justify-content: center; }
+
 .header {
   background-color: #D65814;
   border-bottom: 2px solid #754c35; }
@@ -166,6 +179,14 @@ body {
     color: #D65814; }
   .blog__data {
     font-size: 1.4rem; }
+
+.button {
+  display: block;
+  padding: .8rem 1.3rem;
+  background-color: #fff;
+  border: 1px solid #545454; }
+  .button:hover {
+    background-color: #f0f0f0; }
 
 .section-banner {
   padding: 10rem 1.5rem;

@@ -1,0 +1,14 @@
+.button {
+   display: block;
+   padding: .8rem 1.3rem;
+   background-color: #fff;
+   border: 1px solid $color-grey-1;
+
+   &:hover {
+      background-color: #f0f0f0;
+   }
+
+   &--default {
+      
+   }
+}
