@@ -19,14 +19,9 @@ a {
 .main {
   padding: 0 1.5rem; }
 
-.section {
-  padding-top: 6rem; }
-  .section__heading {
-    text-align: center; }
-
 body {
   font-family: 'Lato', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 1.4;
   font-weight: 400;
   color: #787878; }
@@ -43,8 +38,8 @@ body {
 .heading-quaternary {
   font-size: 2.2rem; }
 
-.text {
-  font-size: 1.5rem; }
+.text-center {
+  text-align: center; }
 
 .header {
   background-color: #D65814;
@@ -160,6 +155,17 @@ body {
     font-size: 1.4rem; }
   .event__text {
     line-height: 2.4rem; }
+
+.blog {
+  margin-top: 3rem; }
+  .blog__image {
+    width: 100%; }
+  .blog__heading {
+    margin: 1rem 0 .5rem 0; }
+  .blog__link {
+    color: #D65814; }
+  .blog__data {
+    font-size: 1.4rem; }
 
 .section-banner {
   padding: 10rem 1.5rem;

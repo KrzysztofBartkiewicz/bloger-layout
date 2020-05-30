@@ -1,0 +1,19 @@
+.blog {
+   margin-top: 3rem;
+
+   &__image {
+      width: 100%;
+   }
+
+   &__heading {
+      margin: 1rem 0 .5rem 0;
+   }
+
+   &__link {
+      color: $color-primary-dark;
+   }
+
+   &__data {
+      font-size: 1.4rem;
+   }
+}
