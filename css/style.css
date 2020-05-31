@@ -70,6 +70,63 @@ body {
 .grid-container {
   padding: 0 .5rem; }
 
+.footer {
+  background-color: #D65814;
+  padding: 5rem 1rem;
+  text-align: center; }
+
+.sub-nav {
+  margin: 0 auto; }
+  .sub-nav__list {
+    padding: 0;
+    margin-bottom: 1rem;
+    text-transform: uppercase; }
+  .sub-nav__item {
+    display: inline-block;
+    font-size: 1.4rem; }
+    .sub-nav__item:not(:last-child) {
+      padding-right: .5rem;
+      border-right: 1px solid #FFF; }
+    .sub-nav__item:not(:first-child) {
+      padding-left: .2rem; }
+  .sub-nav__link {
+    color: #FFF; }
+    .sub-nav__link:hover {
+      color: #BBB; }
+
+.socials {
+  margin: 0 auto 1rem auto; }
+
+.social__link {
+  display: inline-block;
+  margin: 0 .2rem;
+  padding: 2px;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  background: #fff;
+  font-size: 1.4rem;
+  border-radius: 50%; }
+
+.social__icon {
+  display: block;
+  color: #D65814;
+  border: 1px dashed #D65814;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  padding-top: .8rem; }
+
+.copyrights {
+  display: block;
+  color: #FFF;
+  font-size: 1.4rem; }
+  .copyrights__link {
+    color: #FFF; }
+    .copyrights__link:hover {
+      color: #BBB; }
+
 .hamburger {
   width: 5rem;
   height: 3.7rem;
