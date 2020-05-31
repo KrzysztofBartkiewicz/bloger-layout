@@ -1,11 +1,33 @@
 .button {
-   display: block;
+   display: inline-block;
    padding: .8rem 1.3rem;
    background-color: $color-bg-primary;
-   border: 1px solid $color-grey-1;
+   border: 1px solid $color-border;
    cursor: pointer;
 
    &:hover {
       background-color: #f0f0f0;
+   }
+
+   &--subscribe {
+      color: $color-grey-4;
+   }
+
+   &--blue {
+      max-width: max-content;
+      padding: .6rem 1.2rem;
+      background-color: $color-secondary;
+      color: #FFF;
+      border-color: $color-border-blue;
+      font-size: 1.3rem;
+      border-radius: 2px;
+
+      &:hover {
+         background-color: $color-secondary-dark;
+      }
+   }
+
+   &--register-form {
+      font-size: 1.3rem;
    }
 }

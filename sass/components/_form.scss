@@ -1,0 +1,59 @@
+.form {
+  &--subscribe {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.register-form {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 0.8rem 1.4rem;
+  border: 1px solid $color-border;
+}
+
+.fieldset {
+  border: none;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.gender-fieldset {
+  input[type="radio"] {
+    display: none;
+  }
+
+  input#male:checked ~ label[for="male"] {
+    box-shadow: inset 0px 0px 11px 2px rgba(0, 0, 0, 0.2);
+    border-color: $color-border-blue-dark;
+
+    &:hover {
+      background-color: $color-secondary;
+    }
+  }
+
+  input#female:checked ~ label[for="female"] {
+    box-shadow: inset 0px 0px 11px 2px rgba(0, 0, 0, 0.2);
+    border-color: $color-border-blue-dark;
+
+    &:hover {
+      background-color: $color-secondary;
+    }
+  }
+}
+
+.agreement-fieldset {
+   font-size: 1.5rem;
+   color: #FFF;
+}
+
+.input-email {
+  &--subscribe {
+    padding: 1.5rem 2rem;
+    border-right: none;
+  }
+}
