@@ -1,6 +1,10 @@
 .ab-item {
    margin-top: 3rem;
 
+   @media screen and (min-width: 768px) {
+      
+   }
+
    &__heading {
       margin: 0 0 .9rem 0;
    }
