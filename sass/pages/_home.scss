@@ -2,9 +2,16 @@
   padding: 10rem 1.5rem;
   text-align: center;
   background-color: $color-primary;
-  color: #fff;
+  color: $color-bg-primary;
 
   &__text {
      line-height: 1.9;
   }
+}
+
+.section-subscribe {
+   padding-bottom: 6rem;
+   background-color: $color-bg-secondary;
+   border-top: 2px solid $color-border;
+   border-bottom: 2px solid $color-border;
 }

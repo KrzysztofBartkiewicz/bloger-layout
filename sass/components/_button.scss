@@ -1,14 +1,11 @@
 .button {
    display: block;
    padding: .8rem 1.3rem;
-   background-color: #fff;
+   background-color: $color-bg-primary;
    border: 1px solid $color-grey-1;
+   cursor: pointer;
 
    &:hover {
       background-color: #f0f0f0;
-   }
-
-   &--default {
-      
    }
 }

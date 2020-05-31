@@ -7,7 +7,7 @@
    }
 
    &__item {
-      color: #fff;
+      color: $color-bg-primary;
       font-size: 1.4rem;
       padding: .5rem 0 .5rem 2rem;
       border-radius: 3px;
@@ -17,7 +17,7 @@
       }
 
       &:hover {
-         background-color: #fff;
+         background-color: $color-bg-primary;
          color: $color-grey-1;
       }
    }
