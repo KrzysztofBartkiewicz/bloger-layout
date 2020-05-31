@@ -6,7 +6,7 @@
    <link rel="stylesheet" href="../css/normalize.css">
    <link rel="stylesheet" href="../css/font-awesome.min.css">
    <link rel="stylesheet" href="../css/style.css">
-   <title>Bloger - Registration</title>
+   <title>Bloger - Login</title>
 </head>
 
 <body>
@@ -20,35 +20,24 @@
       </div>
       <nav class="navigation">
          <ul class="navigation__list">
-            <li class="navigation__item"><a href="#" class="navigation__link">Signup</a></li>
-            <li class="navigation__item"><a href="login.html" class="navigation__link">Login</a></li>
+            <li class="navigation__item"><a href="signup.html" class="navigation__link">Signup</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Login</a></li>
             <li class="navigation__item"><a href="../index.html" class="navigation__link">Home</a></li>
          </ul>
       </nav>
    </header>
 
    <main>
-      <section class="section section-sign-up">
-         <h1 class="heading-primary section-sign-up__heading text-center">Sign Up, For An Account</h1>
-         <form action="https://dev.cotenfrontend.pl" method="POST" class="form register-form">
-            <input type="name" class="input input--name margin-bottom-small" name="full name" placeholder="Full Name">
-            <fieldset class="fieldset gender-fieldset margin-bottom-small">
-               <input type="radio" id="male" name="gender">
-               <label for="male" class="button button--blue">Male</label>
-               <input type="radio" id="female" name="gender">
-               <label for="female" class="button button--blue">Female</label>
-            </fieldset>
-            <input type="email" name="email" class="input-email input-email--register margin-bottom-small" placeholder="Enter email">
+      <section class="section section-login">
+         <h1 class="heading-primary section-login__heading text-center">Sign In, For Your Account</h1>
+         <form action="https://dev.cotenfrontend.pl" method="POST" class="form login-form">
+            <input type="name" class="input input--name margin-bottom-small" name="username" placeholder="Username">
             <input type="password" name="password" class="input input-password margin-bottom-small" placeholder="Password">
-            <input type="password" name="password" class="input input-password margin-bottom-small" placeholder="Re-Password">
-            <fieldset class="fieldset agreement-fieldset margin-bottom-small">
-               <input type="checkbox" name="terms & conditions" id="agree">
-               <label for="agree">I agree with all terms and conditions.</label>
+            <fieldset class="fieldset remember-me-fieldset margin-bottom-small">
+               <input type="checkbox" name="remember me" id="remember">
+               <label for="remember">Remember me</label>
             </fieldset>
-            <div class="register-form__buttons-box">
-               <button class="button button--register-form" type="submit">Sign Up</button>
-               <button class="button button--register-form" type="reset">Reset</button>
-            </div>
+            <button class="button button--login" type="submit">Login</button>
          </form>
       </section>
    </main>

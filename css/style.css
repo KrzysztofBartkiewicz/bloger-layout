@@ -266,14 +266,13 @@ body {
   .button--register-form {
     font-size: 1.3rem; }
 
-.form--subscribe {
-  display: flex;
-  justify-content: center; }
-
-.register-form {
+.form {
   font-size: 1.6rem;
   display: flex;
   flex-direction: column; }
+  .form--subscribe {
+    flex-direction: row;
+    justify-content: center; }
 
 input {
   padding: 0.8rem 1.4rem;
@@ -282,7 +281,14 @@ input {
 .fieldset {
   border: none;
   padding-top: 0;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  font-size: 1.5rem;
+  color: #fff;
+  vertical-align: bottom; }
+  .fieldset input {
+    margin-right: 0.5rem; }
+  .fieldset label {
+    font-size: 1.4rem; }
 
 .gender-fieldset input[type="radio"] {
   display: none; }
@@ -298,10 +304,6 @@ input {
   border-color: #269ABC; }
   .gender-fieldset input#female:checked ~ label[for="female"]:hover {
     background-color: #58C0DE; }
-
-.agreement-fieldset {
-  font-size: 1.5rem;
-  color: #FFF; }
 
 .input-email--subscribe {
   padding: 1.5rem 2rem;
@@ -337,4 +339,10 @@ input {
   padding: 8rem 1.5rem;
   background-color: #E47133; }
   .section-sign-up__heading {
+    color: #FFF; }
+
+.section-login {
+  padding: 8rem 1.5rem;
+  background-color: #E47133; }
+  .section-login__heading {
     color: #FFF; }

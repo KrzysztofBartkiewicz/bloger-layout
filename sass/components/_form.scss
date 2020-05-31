@@ -1,14 +1,12 @@
 .form {
-  &--subscribe {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-.register-form {
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
+
+  &--subscribe {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 input {
@@ -20,6 +18,17 @@ input {
   border: none;
   padding-top: 0;
   padding-bottom: 0;
+  font-size: 1.5rem;
+  color: #fff;
+  vertical-align: bottom;
+
+  input {
+    margin-right: 0.5rem;
+  }
+
+  label {
+    font-size: 1.4rem;
+  }
 }
 
 .gender-fieldset {
@@ -44,11 +53,6 @@ input {
       background-color: $color-secondary;
     }
   }
-}
-
-.agreement-fieldset {
-   font-size: 1.5rem;
-   color: #FFF;
 }
 
 .input-email {
