@@ -16,9 +16,6 @@ ul {
 a {
   text-decoration: none; }
 
-.main {
-  padding: 0 1.5rem; }
-
 body {
   font-family: 'Lato', sans-serif;
   font-size: 1.5rem;
@@ -64,6 +61,9 @@ body {
     align-items: center; }
   .header__logo {
     height: 4.5rem; }
+
+.grid-container {
+  padding: 0 .5rem; }
 
 .hamburger {
   width: 5rem;
