@@ -1,0 +1,21 @@
+.team-item {
+   margin-top: 3rem;
+
+   &__image {
+      width: 100%;
+   }
+
+   &__heading {
+      margin-top: 1rem;
+      margin-bottom: 0;
+   }
+
+   &__deg {
+      font-size: 1.4rem;
+   }
+
+   &__link {
+      display: block;
+      color: $color-primary-dark;
+   }
+}
