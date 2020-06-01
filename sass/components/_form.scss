@@ -8,6 +8,10 @@
   &--subscribe {
     flex-direction: row;
     justify-content: center;
+
+    @media screen and (min-width: $tablet) {
+       margin-top: 2rem;
+    }
   }
 }
 

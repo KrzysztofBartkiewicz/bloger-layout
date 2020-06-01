@@ -17,6 +17,8 @@ body {
 
    @media screen and (min-width: $tablet) {
       grid-column: 1 /span 12;
+      margin-bottom: 0;
+      margin-top: 5rem;
    }
 }
 
