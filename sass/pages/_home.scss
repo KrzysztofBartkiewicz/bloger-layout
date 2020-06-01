@@ -1,21 +1,27 @@
-.section-banner {
-  padding: 10rem 1.5rem;
-  text-align: center;
-  background-color: $color-primary;
-  color: $color-bg-primary;
+.section {
+  &--banner {
+    padding: 10rem 1.5rem;
+    text-align: center;
+    background-color: $color-primary;
+    color: $color-bg-primary;
+  }
 
-  &__text {
-     line-height: 1.9;
+  &--after-banner {
+    max-width: 390px;
+    margin: 0 auto;
+  }
+
+  &--subscribe {
+    background-color: $color-bg-secondary;
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
   }
 }
 
-.section-after-banner {
-   max-width: 390px;
-   margin: 0 auto;
+.banner-text {
+  line-height: 1.9;
 }
 
-.section-subscribe {
-   background-color: $color-bg-secondary;
-   border-top: 1px solid $color-border;
-   border-bottom: 1px solid $color-border;
+.banner-heading {
+   color: #fff;
 }

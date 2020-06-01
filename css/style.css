@@ -24,7 +24,8 @@ body {
   color: #787878; }
 
 .heading-primary {
-  font-size: 3.2rem; }
+  font-size: 3.2rem;
+  color: #fff; }
 
 .heading-secondary {
   font-size: 3rem;
@@ -69,14 +70,6 @@ body {
     align-items: center; }
   .header__logo {
     height: 4.5rem; }
-
-.grid-container {
-  padding: 0 .5rem; }
-  @media screen and (min-width: 768px) {
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      grid-column-gap: 1.5rem; } }
 
 .footer {
   background-color: #D65814;
@@ -329,31 +322,31 @@ input {
     display: block;
     color: #D65814; }
 
-.section-banner {
+.section--banner {
   padding: 10rem 1.5rem;
   text-align: center;
   background-color: #E47133;
   color: #FFFFFF; }
-  .section-banner__text {
-    line-height: 1.9; }
 
-.section-after-banner {
+.section--after-banner {
   max-width: 390px;
   margin: 0 auto; }
 
-.section-subscribe {
+.section--subscribe {
   background-color: #F8F8F8;
   border-top: 1px solid #DDDDDD;
   border-bottom: 1px solid #DDDDDD; }
 
-.section-sign-up {
-  padding: 8rem 1.5rem;
-  background-color: #E47133; }
-  .section-sign-up__heading {
-    color: #FFF; }
+.banner-text {
+  line-height: 1.9; }
 
-.section-login {
+.banner-heading {
+  color: #fff; }
+
+.section--signup {
   padding: 8rem 1.5rem;
   background-color: #E47133; }
-  .section-login__heading {
-    color: #FFF; }
+
+.section--login {
+  padding: 8rem 1.5rem;
+  background-color: #E47133; }

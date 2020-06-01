@@ -1,8 +1,6 @@
-.section-login {
-   padding: 8rem 1.5rem;
-   background-color: $color-primary;
-
-   &__heading {
-      color: #FFF;
-   }
+.section {
+  &--login {
+    padding: 8rem 1.5rem;
+    background-color: $color-primary;
+  }
 }
