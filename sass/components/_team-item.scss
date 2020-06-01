@@ -1,6 +1,14 @@
 .team-item {
    margin-top: 3rem;
 
+   @media screen and (min-width: $tablet) {
+      grid-column: span 6;
+   }
+
+   @media screen and (min-width: $desktop) {
+      grid-column: span 3;
+   }
+
    &__image {
       width: 100%;
    }

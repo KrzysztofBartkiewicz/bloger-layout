@@ -7,7 +7,6 @@
   }
 
   &--after-banner {
-    max-width: 390px;
     margin: 0 auto;
   }
 
@@ -24,4 +23,11 @@
 
 .banner-heading {
    color: #fff;
+}
+
+.button-wrapper {
+
+   @media screen and (min-width: $tablet) {
+      grid-column: 1 / span 12;
+   }
 }

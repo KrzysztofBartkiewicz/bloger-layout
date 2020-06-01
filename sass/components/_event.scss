@@ -1,6 +1,10 @@
 .event {
    margin-top: 3rem;
 
+   @media screen and (min-width: $tablet) {
+      grid-column: span 4;
+   }
+
    &__image {
       width: 100%;
    }

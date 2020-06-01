@@ -6,6 +6,12 @@
 
 html {
   font-size: 62.5%; }
+  @media screen and (min-width: 768px) {
+    html {
+      font-size: 68%; } }
+  @media screen and (min-width: 1170px) {
+    html {
+      font-size: 74.5%; } }
 
 body {
   box-sizing: border-box; }
@@ -30,6 +36,9 @@ body {
 .heading-secondary {
   font-size: 3rem;
   color: #676767; }
+  @media screen and (min-width: 768px) {
+    .heading-secondary {
+      grid-column: 1 /span 12; } }
 
 .heading-tertiary {
   font-size: 2.4rem;
@@ -70,6 +79,19 @@ body {
     align-items: center; }
   .header__logo {
     height: 4.5rem; }
+
+.grid {
+  padding: 0 1.5rem; }
+  @media screen and (min-width: 768px) {
+    .grid {
+      max-width: 768px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-column-gap: 3rem; } }
+  @media screen and (min-width: 1170px) {
+    .grid {
+      max-width: 1170px; } }
 
 .footer {
   background-color: #D65814;
@@ -204,6 +226,10 @@ body {
 
 .ab-item {
   margin-top: 3rem; }
+  @media screen and (min-width: 768px) {
+    .ab-item {
+      grid-column: span 4;
+      grid-row: 1; } }
   .ab-item__heading {
     margin: 0 0 .9rem 0; }
   .ab-item__text {
@@ -218,6 +244,9 @@ body {
 
 .event {
   margin-top: 3rem; }
+  @media screen and (min-width: 768px) {
+    .event {
+      grid-column: span 4; } }
   .event__image {
     width: 100%; }
   .event__heading {
@@ -232,6 +261,9 @@ body {
 
 .blog {
   margin-top: 3rem; }
+  @media screen and (min-width: 768px) {
+    .blog {
+      grid-column: span 6; } }
   .blog__image {
     width: 100%; }
   .blog__heading {
@@ -311,6 +343,12 @@ input {
 
 .team-item {
   margin-top: 3rem; }
+  @media screen and (min-width: 768px) {
+    .team-item {
+      grid-column: span 6; } }
+  @media screen and (min-width: 1170px) {
+    .team-item {
+      grid-column: span 3; } }
   .team-item__image {
     width: 100%; }
   .team-item__heading {
@@ -329,7 +367,6 @@ input {
   color: #FFFFFF; }
 
 .section--after-banner {
-  max-width: 390px;
   margin: 0 auto; }
 
 .section--subscribe {
@@ -342,6 +379,10 @@ input {
 
 .banner-heading {
   color: #fff; }
+
+@media screen and (min-width: 768px) {
+  .button-wrapper {
+    grid-column: 1 / span 12; } }
 
 .section--signup {
   padding: 8rem 1.5rem;

@@ -1,8 +1,9 @@
 .ab-item {
    margin-top: 3rem;
 
-   @media screen and (min-width: 768px) {
-      
+   @media screen and (min-width: $tablet) {
+      grid-column: span 4;
+      grid-row: 1;
    }
 
    &__heading {
