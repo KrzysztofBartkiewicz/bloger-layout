@@ -1,13 +1,16 @@
 .header {
    background-color: $color-primary-dark;
    border-bottom: 2px solid #754c35;
-   
 
    &__box {
       padding: .7rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      @media screen and (min-width: $tablet) {
+         grid-column: 1 / span 3;
+      }
    }
 
    &__logo {

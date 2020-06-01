@@ -1,9 +1,21 @@
 .navigation {
    display: none;
    opacity: 0;
+
+   @media screen and (min-width: $tablet) {
+      display: block;
+      opacity: 1;
+
+      grid-column: -1/ span 4;
+   }
    
    &__list {
      padding: .3rem;
+
+     @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+     }
    }
 
    &__item {
@@ -12,18 +24,41 @@
       padding: .5rem 0 .5rem 2rem;
       border-radius: 3px;
 
+      @media screen and (min-width: $tablet) {
+         text-align: center;
+         padding: 0;
+         margin-right: 2rem;
+         margin-bottom: 0;
+      }
+
       &:not(:last-child) {
          margin-bottom: .5rem;
+
+         @media screen and (min-width: $tablet) {
+            margin-bottom: 0;
+         }
       }
 
       &:hover {
          background-color: $color-bg-primary;
          color: $color-grey-1;
       }
+
+      &--dropdown {
+         @media screen and (min-width: $tablet) {
+            padding: .5rem 1rem;
+            margin-right: 0;
+         }
+      }
    }
 
    &__link {
       color: inherit;
+
+      @media screen and (min-width: $tablet) {
+         padding: .5rem 1rem;
+         display: block;
+      }
    }
 }
 

@@ -19,6 +19,10 @@
 
 .banner-text {
   line-height: 1.9;
+
+  & span {
+     display: block;
+  }
 }
 
 .banner-heading {
