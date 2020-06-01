@@ -101,8 +101,7 @@ body {
 .footer {
   background-color: #D65814;
   padding: 5rem 1rem;
-  text-align: center;
-  margin-top: 4rem; }
+  text-align: center; }
 
 .sub-nav {
   margin: 0 auto; }
@@ -446,6 +445,9 @@ input {
   background-color: #F8F8F8;
   border-top: 1px solid #DDDDDD;
   border-bottom: 1px solid #DDDDDD; }
+
+.section--team {
+  margin-bottom: 4rem; }
 
 .banner-text {
   line-height: 1.9; }

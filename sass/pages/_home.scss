@@ -15,23 +15,26 @@
     border-top: 1px solid $color-border;
     border-bottom: 1px solid $color-border;
   }
+
+  &--team {
+    margin-bottom: 4rem;
+  }
 }
 
 .banner-text {
   line-height: 1.9;
 
   & span {
-     display: block;
+    display: block;
   }
 }
 
 .banner-heading {
-   color: #fff;
+  color: #fff;
 }
 
 .button-wrapper {
-
-   @media screen and (min-width: $tablet) {
-      grid-column: 1 / span 12;
-   }
+  @media screen and (min-width: $tablet) {
+    grid-column: 1 / span 12;
+  }
 }
