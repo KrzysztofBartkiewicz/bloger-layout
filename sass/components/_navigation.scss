@@ -109,6 +109,11 @@
       border-left: 10px solid transparent;
       border-right: 10px solid transparent;
       border-bottom: 10px solid white;
+      display: none;
+
+      @media screen and (min-width: $tablet) {
+         display: block;
+      }
     }
   }
 
