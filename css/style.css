@@ -72,8 +72,10 @@ body {
   justify-content: center; }
 
 .header {
+  position: relative;
   background-color: #D65814;
-  border-bottom: 2px solid #754c35; }
+  border: .4rem outset #e0570d;
+  box-shadow: 0px 10px 12px -5px rgba(0, 0, 0, 0.38); }
   .header__box {
     padding: .7rem;
     display: flex;
