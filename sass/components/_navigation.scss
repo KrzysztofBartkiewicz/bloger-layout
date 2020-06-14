@@ -21,7 +21,7 @@
 
    &__item {
       color: $color-bg-primary;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       padding: 0.5rem 0 0.5rem 2rem;
       border-radius: 3px;
 
@@ -54,6 +54,8 @@
    }
 
    &__link {
+      display: block;
+      width: 100%;
       color: inherit;
 
       @media screen and (min-width: $tablet) {
@@ -64,6 +66,8 @@
 }
 
 .dropdown-button {
+   width: 100%;
+   text-align: left;
    background-color: transparent;
    outline: none;
    border: none;
@@ -87,7 +91,7 @@
       padding: 1rem 0 0 3rem;
       max-height: 0;
       overflow: hidden;
-      transition: .5s;
+      transition: 0.5s;
 
       @media screen and (min-width: $tablet) {
          position: absolute;
@@ -164,4 +168,4 @@
       transform: translateY(0);
       opacity: 1;
    }
-   }
+}

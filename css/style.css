@@ -203,7 +203,7 @@ body {
         align-items: center; } }
   .navigation__item {
     color: #FFFFFF;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     padding: 0.5rem 0 0.5rem 2rem;
     border-radius: 3px; }
     @media screen and (min-width: 768px) {
@@ -225,6 +225,8 @@ body {
         padding: 0.5rem 1rem;
         margin-right: 0; } }
   .navigation__link {
+    display: block;
+    width: 100%;
     color: inherit; }
     @media screen and (min-width: 768px) {
       .navigation__link {
@@ -232,6 +234,8 @@ body {
         display: block; } }
 
 .dropdown-button {
+  width: 100%;
+  text-align: left;
   background-color: transparent;
   outline: none;
   border: none;
@@ -251,7 +255,7 @@ body {
   padding: 1rem 0 0 3rem;
   max-height: 0;
   overflow: hidden;
-  transition: .5s; }
+  transition: 0.5s; }
   @media screen and (min-width: 768px) {
     .dropdown__list {
       position: absolute;
