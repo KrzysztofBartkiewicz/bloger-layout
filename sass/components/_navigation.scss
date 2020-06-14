@@ -167,5 +167,6 @@
    @media screen and (min-width: $tablet) {
       transform: translateY(0);
       opacity: 1;
+      overflow: visible;
    }
 }
