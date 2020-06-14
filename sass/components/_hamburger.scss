@@ -1,10 +1,8 @@
 .hamburger {
-   width: 5rem;
-   height: 3.7rem;
+   padding: .5rem;
    background-color: transparent;
-   border: 1px solid $color-bg-primary;
-   border-radius: 5px;
-   outline: none;
+   border: 3px solid $color-bg-primary;
+   border-radius: .8rem;
    position: relative;
    cursor: pointer;
 
@@ -12,26 +10,45 @@
       display: none;
    }
    
-   &__bar,
-   &__bar::before,
-   &__bar::after {
-      margin: 0 auto;
-      content: "";
-      width: 3rem;
-      height: 2px;
-      background-color: $color-bg-primary;
-      position: absolute;
-      top: 1.6rem;
-      left: .9rem;
+   &__box {
+      display: block;
+      width: 4rem;
+      height: 3rem;
+      position: relative;
    }
 
-   &__bar::before {
-      top: -.7rem;
+   &__inner {
+      @include hamburger-bar;
       left: 0;
-   }
+      top: 50%;
+      transform: translateY(-50%);
+      transition: .2s ease-in-out;
 
-   &__bar::after {
-      top: .7rem;
-      left: 0;
+      &::before,
+      &::after {
+         @include hamburger-bar;
+         content: "";
+         transition: .2s ease-in-out;
+      }
+
+      &::before {
+         top: -1rem;
+      }
+
+      &::after {
+         top: 1rem;
+      }
    }
+}
+
+.hamburger--active .hamburger__inner {
+   background-color: transparent;
+}
+
+.hamburger--active .hamburger__inner::before {
+   transform: translateY(1rem) rotate(45deg);
+}
+
+.hamburger--active .hamburger__inner::after {
+   transform: translateY(-1rem) rotate(-45deg);
 }

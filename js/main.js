@@ -4,21 +4,22 @@ const navigation = document.querySelector(".navigation");
 const dropdownButton = document.querySelector(".dropdown-button");
 const dropdownMenu = document.querySelector(".dropdown__list");
 
-let buttonClicked = false;
+let isButtonClicked = false;
 
 hamburger.addEventListener("click", (e) => {
   navigation.classList.toggle("visible");
+  hamburger.classList.toggle('hamburger--active');
 });
 
 dropdownButton.addEventListener("click", (e) => {
   dropdownMenu.classList.toggle("dropdown-visible");
-  buttonClicked = true;
+  isButtonClicked = true;
 });
 
 //console.log(dropdownMenu.getBoundingClientRect());
 
 document.addEventListener('click', (e) => {
-   if (dropdownMenu.classList.contains('dropdown-visible') && !buttonClicked) {
+   if (dropdownMenu.classList.contains('dropdown-visible') && !isButtonClicked) {
       const coords = dropdownMenu.getBoundingClientRect();
       if (!(e.clientX > coords.left &&
             e.clientX < coords.right &&
@@ -27,5 +28,6 @@ document.addEventListener('click', (e) => {
          dropdownMenu.classList.remove('dropdown-visible');
       }
    }
-   buttonClicked = false;
+   isButtonClicked = false;
 });
+
