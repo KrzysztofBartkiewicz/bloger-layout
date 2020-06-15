@@ -12,7 +12,6 @@ hamburger.addEventListener("click", (e) => {
 });
 
 dropdownButton.addEventListener("click", (e) => {
-   dropdownMenu.classList.toggle('display-block');
    dropdownMenu.classList.toggle("dropdown-visible");
    isButtonClicked = true;
 });

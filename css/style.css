@@ -287,9 +287,10 @@ body {
       border-radius: 5px;
       max-height: 30rem;
       cursor: auto;
-      transition: opacity .5s ease-in-out, transform .5s ease-in-out;
       transform: translateY(2rem);
-      opacity: 0; } }
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity .5s ease-in-out, transform .5s ease-in-out; } }
   .dropdown__list::before {
     position: absolute;
     bottom: 100%;
@@ -335,10 +336,8 @@ body {
     .dropdown-visible {
       transform: translateY(0);
       opacity: 1;
+      visibility: visible;
       overflow: visible; } }
-
-.display-block {
-  display: block; }
 
 .ab-item {
   margin-top: 3rem; }
