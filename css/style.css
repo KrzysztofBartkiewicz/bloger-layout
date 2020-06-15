@@ -253,10 +253,11 @@ body {
         display: block; } }
 
 .dropdown-button {
+  display: block;
   width: 100%;
+  height: 100%;
   text-align: left;
   background-color: transparent;
-  outline: none;
   border: none;
   color: inherit;
   margin: 0;
@@ -274,7 +275,7 @@ body {
   padding: 1rem 0 0 3rem;
   max-height: 0;
   overflow: hidden;
-  transition: 0.5s; }
+  transition: max-height 0.5s linear; }
   @media screen and (min-width: 768px) {
     .dropdown__list {
       position: absolute;
@@ -285,6 +286,8 @@ body {
       border: 1px solid #676767;
       border-radius: 5px;
       max-height: 30rem;
+      cursor: auto;
+      transition: opacity .5s ease-in-out, transform .5s ease-in-out;
       transform: translateY(2rem);
       opacity: 0; } }
   .dropdown__list::before {
@@ -333,6 +336,9 @@ body {
       transform: translateY(0);
       opacity: 1;
       overflow: visible; } }
+
+.display-block {
+  display: block; }
 
 .ab-item {
   margin-top: 3rem; }
